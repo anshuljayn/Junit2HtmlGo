@@ -1,0 +1,1 @@
+# Junit2HtmlGo
