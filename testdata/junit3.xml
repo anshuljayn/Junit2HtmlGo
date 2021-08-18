@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <testsuite name="one_more_test_suite" tests="6" failures="1" errors="0" time="0.545">
+      <testcase name="Given a sample When I run test Then test is executed - 13" classname="one_more_test_suite" time="0.000371155">
+          <failure type="Failure">/Users/Documents/automation-tests/specs/sample_test.go:1254&#xA;test is failed&#xA;/Users/Documents/automation-tests/specs/sample_test.go:1255</failure>
+      </testcase>
+      <testcase name="Given a sample When I run test Then test is executed - 14" classname="one_more_test_suite" time="0.000371155">
+          <failure type="Failure">/Users/Documents/automation-tests/specs/sample_test.go:1254&#xA;test is failed&#xA;/Users/Documents/automation-tests/specs/sample_test.go:1255</failure>
+      </testcase>
+  </testsuite>

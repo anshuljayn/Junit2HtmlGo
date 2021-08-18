@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <testsuite name="another_test_suite" tests="6" failures="1" errors="0" time="0.545">
+      <testcase name="Given a sample When I run test Then test is executed - 15" classname="sample_test_suite" time="0">
+          <skipped></skipped>
+      </testcase>
+    <testcase name="Given a sample When I run test Then test is executed - 16" classname="sample_test_suite" time="0">
+        <skipped></skipped>
+    </testcase>
+</testsuite>

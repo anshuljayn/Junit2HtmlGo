@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <testsuite name="sample_test_suite" tests="6" failures="1" errors="0" time="0.545">
+      <testcase name="Given a sample When I run test Then test is executed - 1" classname="sample_test_suite" time="1.2829e-05"></testcase>
+      <testcase name="Given a sample When I run test Then test is executed - 2" classname="sample_test_suite" time="9.59e-07"></testcase>
+      <testcase name="Given a sample When I run test Then test is executed - 3" classname="sample_test_suite" time="7.4e-07"></testcase>
+      <testcase name="Given a sample When I run test Then test is executed - 4" classname="sample_test_suite" time="0">
+          <skipped></skipped>
+      </testcase>
+      <testcase name="Given a sample When I run test Then test is executed - 5" classname="sample_test_suite" time="7.73e-07"></testcase>
+      <testcase name="Given a sample When I run test Then test is executed - 6" classname="sample_test_suite" time="0.000371155">
+          <failure type="Failure">/Users/Documents/automation-tests/specs/sample_test.go:1254&#xA;test is failed&#xA;/Users/Documents/automation-tests/specs/sample_test.go:1255</failure>
+      </testcase>
+      <testcase name="Given a sample When I run test Then test is executed - 7" classname="sample_test_suite" time="5.97e-07"></testcase>
+  </testsuite>
