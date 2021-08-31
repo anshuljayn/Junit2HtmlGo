@@ -25,6 +25,7 @@ type pageData struct {
 	StartTime              string
 	EndTime                string
 	Duration               string
+	BrandLogo              string
 }
 
 type div struct {
