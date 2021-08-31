@@ -363,7 +363,7 @@ const ReportTemplate = `<!DOCTYPE html>
 <body>
     <div class="header">
         <a class="brand-logo" href="#!"><img
-                src="https://www.riverisland.com/Assets/RiverIsland/Core/images/chat_monogram_logo.png"></a>
+                src="{{.BrandLogo}}"></a>
         <span class="report-name">{{.ReportName}}</span>
         <span class='right'>Jul 19, 2021 09:01:19 AM</span>
     </div>
