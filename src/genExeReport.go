@@ -19,15 +19,17 @@ type ReportData struct {
 func CreateReport(reportName string,jFiles []string, r *ReportData)  {
 	data := processExecutionData(createCombJunitRep(jFiles))
 	if r !=nil {
-		data.ReportName=r.ReportName
-		data.StartTime =r.StartTime
-		data.EndTime=r.EndTime
-		data.Duration=r.Duration
+		if r.ReportName != "" {data.ReportName=r.ReportName}else {data.ReportName="Test Execution Report"}
+		if r.StartTime != "" {data.StartTime=r.StartTime}else {data.StartTime ="DD:MM:YYYY HH:MM:SS"}
+		if r.EndTime != "" {data.EndTime=r.EndTime}else {data.EndTime="DD:MM:YYYY HH:MM:SS"}
+		if r.Duration != "" {data.Duration=r.Duration}else {data.Duration="HH:MM:SS"}
+		if r.BrandLogo != "" {data.BrandLogo=r.BrandLogo}else {data.BrandLogo="https://avatars.githubusercontent.com/u/43154620?v=4"}
 	}else {
 		data.ReportName="Test Execution Report"
 		data.StartTime ="DD:MM:YYYY HH:MM:SS"
 		data.EndTime="DD:MM:YYYY HH:MM:SS"
 		data.Duration="HH:MM:SS"
+		data.BrandLogo="https://avatars.githubusercontent.com/u/43154620?v=4"
 	}
 
 	t:=template.New("report")
@@ -44,15 +46,17 @@ func CreateReport(reportName string,jFiles []string, r *ReportData)  {
 func RenderReport(port string, jFiles []string, r *ReportData){
 	data := processExecutionData(createCombJunitRep(jFiles))
 	if r !=nil {
-		data.ReportName=r.ReportName
-		data.StartTime =r.StartTime
-		data.EndTime=r.EndTime
-		data.Duration=r.Duration
+		if r.ReportName != "" {data.ReportName=r.ReportName}else {data.ReportName="Test Execution Report"}
+		if r.StartTime != "" {data.StartTime=r.StartTime}else {data.StartTime ="DD:MM:YYYY HH:MM:SS"}
+		if r.EndTime != "" {data.EndTime=r.EndTime}else {data.EndTime="DD:MM:YYYY HH:MM:SS"}
+		if r.Duration != "" {data.Duration=r.Duration}else {data.Duration="HH:MM:SS"}
+		if r.BrandLogo != "" {data.BrandLogo=r.BrandLogo}else {data.BrandLogo="https://avatars.githubusercontent.com/u/43154620?v=4"}
 	}else {
 		data.ReportName="Test Execution Report"
 		data.StartTime ="DD:MM:YYYY HH:MM:SS"
 		data.EndTime="DD:MM:YYYY HH:MM:SS"
 		data.Duration="HH:MM:SS"
+		data.BrandLogo="https://avatars.githubusercontent.com/u/43154620?v=4"
 	}
 	
 	t:=template.New("report")
