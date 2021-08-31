@@ -30,9 +30,10 @@ func CreateReport(reportName string,jFiles []string, r *ReportData)  {
 		data.Duration="HH:MM:SS"
 	}
 
-	tmpl := template.Must(template.ParseFiles( "template.html"))
+	t:=template.New("report")
+	t,_=t.Parse(ReportTemplate)
 	var tpl bytes.Buffer
-	if err := tmpl.Execute(&tpl, data); err != nil {
+	if err := t.Execute(&tpl, data); err != nil {
 		fmt.Println(err)
 	}
 
@@ -53,10 +54,12 @@ func RenderReport(port string, jFiles []string, r *ReportData){
 		data.EndTime="DD:MM:YYYY HH:MM:SS"
 		data.Duration="HH:MM:SS"
 	}
+	
+	t:=template.New("report")
+	t,_=t.Parse(ReportTemplate)
 
-	tmpl := template.Must(template.ParseFiles( "template.html"))
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		if err := tmpl.Execute(w, data); err != nil {
+		if err := t.Execute(w, data); err != nil {
 			fmt.Println(err)
 		}
 	})
