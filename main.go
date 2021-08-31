@@ -1,7 +1,7 @@
 package main
 
 import (
-	"Junit2htmlGo/src"
+	"github.com/anshuljayn/Junit2htmlGo/src"
 )
 
 func main() {
