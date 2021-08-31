@@ -31,7 +31,7 @@ Simple Go implementation to generate HTML Report from Junit.xml reports. This ca
 		StartTime:  "Start time of execution",
 		EndTime:    "end time of execution",
 		Duration:   "test duration",
-		BrandLogo:  "https://www.yourbranc.com/logo_url_here.png",
+		BrandLogo:  "https://www.yourbrand.com/logo_url_here.png",
 }
 ```
 *if not set default values will be displayed - 
