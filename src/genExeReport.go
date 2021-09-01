@@ -14,6 +14,7 @@ type ReportData struct {
 	StartTime string
 	EndTime string
 	Duration string
+	BrandLogo string
 }
 
 func CreateReport(reportName string,jFiles []string, r *ReportData)  {
