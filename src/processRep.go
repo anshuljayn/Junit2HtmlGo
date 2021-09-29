@@ -111,7 +111,16 @@ func processExecutionData(xmlJunitRep string) pageData {
 			tr1 := tr{Td: []td{tdH1, tdC1}}
 			tr2 := tr{Td: []td{tdH2, tdC2}}
 			tr3 := tr{Td: []td{tdH3, tdC3}}
-			trs := []tr{tr1, tr2, tr3}
+
+			var trs []tr
+
+			if len(fr.Testsuite[i].Testcase[j].Tdata) >0{
+				tdC4 := td{Text: fr.Testsuite[i].Testcase[j].Tdata}
+				tr4 := tr{Td: []td{tdH4, tdC4}}
+				trs = []tr{tr1, tr2, tr3,tr4}
+			}else{
+				trs = []tr{tr1, tr2, tr3}
+			}
 
 			TCtable := table{Tr: trs, Class: "testcase"}
 			TCTables = append(TCTables, TCtable)
