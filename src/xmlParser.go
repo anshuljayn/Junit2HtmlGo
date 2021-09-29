@@ -53,6 +53,7 @@ type testcase struct {
 	Name      string `xml:"name,attr"`
 	Classname string `xml:"classname,attr"`
 	Time      string `xml:"time,attr"`
+	Tdata	  string `xml:"data,attr"`
 	Skipped   string `xml:"skipped"`
 	Failure   struct {
 		Text string `xml:",chardata"`
