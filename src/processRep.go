@@ -70,7 +70,8 @@ func processExecutionData(xmlJunitRep string) pageData {
 	tdH1 := td{Class: "fitwidth headColumn", Text: "Test Case:"}
 	tdH2 := td{Class: "headColumn", Text: "Result:"}
 	tdH3 := td{Class: "headColumn", Text: "Duration:"}
-
+	tdH4 := td{Class: "fitwidth headColumn", Text: "Test Data:"}
+	
 	var divSCs []div
 	var tableSVs, tableEVs []table
 	var NoOfTestCasesPass, NoOfTestCasesFail, NoOfTestCasesSkip, NoOfTSPass, NoOfTSFail, NoOfTSSkip int
